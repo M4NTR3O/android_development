@@ -47,8 +47,8 @@
         android:layout_height="56dp"
         android:layout_marginBottom="58dp"
         android:ems="10"
+        android:hint="Введите заглавный символ(A-Z)"
         android:inputType="text"
-        android:text="Символ"
         app:layout_constraintBottom_toTopOf="@+id/text2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/text1" />

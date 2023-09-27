@@ -13,13 +13,15 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<Button>(R.id.button)
         val input_text = findViewById<EditText>(R.id.edit1)
         val output_text = findViewById<TextView>(R.id.text2)
-        if (input_text.text.toString().length > 1){
-            input_text.setText("Введён не символ")
-        }
-        else when(input_text.text.toString()[0]){
-            'L', 'M', 'K', 'D' -> input_text.setText("Это согласные буквы")
-            in 'A'..'Z' -> input_text.setText("Возможно, это гласные буквы")
-            else -> input_text.setText("Введён не символ")
+        button.setOnClickListener {
+            if (input_text.text.toString().length > 1){
+                output_text.text = "Введён не символ"
+            }
+            else when(input_text.text.toString()[0]){
+                'L', 'M', 'K', 'D' -> output_text.text = "Это согласные буквы"
+                in 'A'..'Z' -> output_text.text ="Возможно, это гласные буквы"
+                else -> output_text.text = "Введён не символ"
+            }
         }
     }
 }

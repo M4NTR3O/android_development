@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val button = findViewById<Button>(R.id.button)
         val input_text = findViewById<EditText>(R.id.edit1)
-        val output_text = findViewById<TextView>(R.id.text2)
+        val output_text = findViewById<TextView>(R.id.textResult)
         button.setOnClickListener {
             if (input_text.text.toString().length > 1){
                 output_text.text = "Введён не символ"

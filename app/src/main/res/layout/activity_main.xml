@@ -10,11 +10,11 @@
         android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="264dp"
-        android:layout_marginEnd="3dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginBottom="29dp"
         android:text="Введите символ"
-        app:layout_constraintEnd_toStartOf="@+id/edit1"
+        app:layout_constraintBottom_toTopOf="@+id/edit1"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,25 +32,42 @@
 
     <TextView
         android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Сообщение"
+        android:layout_width="82dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginEnd="41dp"
+        android:text="Сообщение:"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintEnd_toStartOf="@+id/textResult"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/edit1"
-        android:layout_width="207dp"
-        android:layout_height="56dp"
+        android:layout_width="295dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="61dp"
+        android:layout_marginTop="252dp"
+        android:layout_marginEnd="56dp"
         android:layout_marginBottom="58dp"
         android:editable="true"
         android:ems="10"
         android:hint="Введите заглавный символ(A-Z)"
         android:inputType="text"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/text2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/text1" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="190dp"
+        android:layout_height="23dp"
+        android:layout_marginEnd="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text2"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
